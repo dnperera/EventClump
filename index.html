@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<!-- Adding viewport and bootstarp tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EventClump</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Lato|Lobster|Shojumaru" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://use.typekit.net/nlq1kdt.js"></script>
+  	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+	<div>
+		<nav class="navbar navbar-default navbar-fixed-top nav-style">
+			<div class="container-fluid">				
+				<div class="navbar-header text-center teal-back side-padding">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+			      	</button>
+					<h1 class="h1font"><a href="index.html">EventClump</a></h1>
+				</div>
+			      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="Navbar">
+			      	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Entertainment <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="movie.html">Movies</a></li>
+				          <li><a href="events.html">Events</a></li>
+				        </ul>
+				    </li>			  		
+				  </ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container">
+	<video id="background_video" loop muted></video>
+	<div id="video_cover"></div>
+	<div id="overlay"></div>
+<!-- 		<div class="row">
+			<div class="jumbotron">
+				<h1 id="welcome" class="text-center">Welcome</h1>
+			</div>
+		</div> -->
+		<div class="row">
+		</div>
+		<br>
+		<div class="row max-height">
+			<div class="panel panel-info col-sm-6">
+				<div class="panel-heading">
+                	<h1 class="panel-movies text-center">Movies</h1>
+            	</div>
+				<div id="now-playing" class="panel-body">
+                <table class="table table-striped">
+                    <tbody id="movie-schedule">
+                    </tbody>
+                </table>
+            	</div>
+			</div>
+			<div class="panel panel-info col-sm-6">
+				<div class="panel-heading">
+                	<h1 class="panel-events text-center">Events</h1>
+            	</div>
+				<div id="events" class="panel-body">
+                <table class="table table-striped">
+                    <tbody id="events-schedule">
+                    </tbody>
+                </table>
+            	</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer">
+	    <p class="text-muted text-center footer">&copy;Copyright EventClump</p>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDPnWZ8VN8tZD-Fu3b2428gZx737yHeR9s&libraries=places"></script>
+ 	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+ 	<script src="bideo.js"></script>
+  	<script src="main.js"></script>
+	<script src="core.js"></script>
+</body>
+</html>
